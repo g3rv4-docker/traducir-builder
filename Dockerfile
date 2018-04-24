@@ -7,4 +7,6 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh && \
 COPY package.json /var/package.json
 COPY package-lock.json /var/package-lock.json
 COPY init_dependencies.sh /var/init_dependencies.sh
+COPY build.sh /var/build.sh
 RUN  ["/bin/bash", "/var/init_dependencies.sh"]
+CMD  ["/bin/bash", "/var/build.sh"]
