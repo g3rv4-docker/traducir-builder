@@ -3,4 +3,4 @@ dotnet build
 
 cd /var/app/Traducir.Web
 cp -r /var/node_modules node_modules
-npm run build
+npm run build-test
