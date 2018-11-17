@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.0.5-sdk-2.1.4-jessie
+FROM microsoft/dotnet:2.1.500-sdk-stretch
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh && \
     bash nodesource_setup.sh && \
