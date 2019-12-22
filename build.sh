@@ -1,6 +1,8 @@
-cd /var/app/Traducir.Api
-dotnet build
+set -e
 
 cd /var/app/Traducir.Web
-cp -r /var/node_modules node_modules
-npm run build-test
+dotnet build -c Release
+
+cd /var/app/Traducir.Web/Scripts
+tslint --project .
+tsc
