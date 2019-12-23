@@ -4,8 +4,5 @@ RUN apk add --no-cache npm git && \
     npm install -g tslint@5.20.1 typescript@3.7.4
 
 COPY init_dependencies.sh /var/init_dependencies.sh
-COPY build.sh /var/build.sh
 
 RUN  /bin/sh /var/init_dependencies.sh
-
-CMD  ["/bin/sh", "/var/build.sh"]
