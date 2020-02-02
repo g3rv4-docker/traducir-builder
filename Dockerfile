@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine3.10
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine3.10
 
 RUN apk add --no-cache npm git && \
     npm install -g tslint@5.20.1 typescript@3.7.4
